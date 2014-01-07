@@ -1,0 +1,135 @@
+/*#########GENERAL##########*/
+
+body {
+	background-color: #c4c4c4;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 120%;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	  -moz-box-sizing: border-box; 
+	  -webkit-box-sizing: border-box; 
+	  box-sizing: border-box;
+ }
+
+/*########VARIOUS DIVS#########*/
+
+.container {
+	
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-top: 0px;
+	padding: 10px;
+	font-family: 'Seymour One', sans-serif;
+	font-size: 300%;
+	
+}
+
+
+.row {
+	
+}
+
+
+/*##########THE BOX##########*/
+
+.box {
+	display: inline-block;
+	margin: .5% auto;
+	position: relative;
+/*	width: 25%;
+	height: 45%;*/
+	width: 14%;
+	height: 25%;
+
+	border-radius: 10%;
+	background-color: #00b060;
+	box-shadow: 2px 4px 2px .5px 0 #00733e;
+
+}
+
+.circle {
+	
+	border-radius: 50%;
+	border: 70px solid #e20048;
+	position: absolute;
+	top: 7%;
+	left: 7%;
+	width: 85%;
+	height: 85%;
+	box-shadow: 0px 0px 3px 3px #e20048, 3px 3px 6px 6px #93002f;
+}
+
+.inner-circle {
+	position: relative;
+	top: 0%;
+	left: 0%;
+	/*background-color: blue;*/
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 0px 3px 0px #00b060,  3px 3px 6px 6px #93002f;
+}
+
+/*##########THE X##########*/
+
+
+.an_x1, 
+.an_x1top,
+.an_x2
+{
+    background: #8f00ff;
+    position: absolute;
+}
+
+.an_x1 {
+    height: 100%;
+	left: 40%;
+    top: 0%;
+    -o-transform:rotate(38deg);
+    -moz-transform:rotate(38deg);
+    -ms-transform:rotate(38deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(38deg);
+    width: 18%;
+    box-shadow: 0px 0px 3px 3px #7703d1, 6px 0px 6px 6px #5c00a4;
+}
+
+.an_x2 {
+    height: 100%;
+	left: 40%;
+    top: 0%;
+    -o-transform:rotate(-38deg);
+    -moz-transform:rotate(-38deg);
+    -ms-transform:rotate(-38deg);
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-38deg);
+    width: 18%;
+    box-shadow: 0px 0px 3px 3px #7703d1, 0px 6px 6px 6px #5c00a4;
+}
+
+
+.an_x1top {
+    height: 100%;
+	left: 40%;
+    top: 0%;
+    -o-transform:rotate(38deg);
+    -moz-transform:rotate(38deg);
+    -ms-transform:rotate(38deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(38deg);
+    width: 20%;
+
+}
+
+
