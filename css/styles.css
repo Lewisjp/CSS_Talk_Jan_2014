@@ -96,11 +96,11 @@ body {
     height: 100%;
 	left: 40%;
     top: 0%;
-    -o-transform:rotate(38deg);
-    -moz-transform:rotate(38deg);
-    -ms-transform:rotate(38deg);
+    -o-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
-    transform:rotate(38deg);
+    transform:rotate(45deg);
     width: 18%;
     box-shadow: 0px 0px 3px 3px #7703d1, 6px 0px 6px 6px #5c00a4;
 }
@@ -109,11 +109,11 @@ body {
     height: 100%;
 	left: 40%;
     top: 0%;
-    -o-transform:rotate(-38deg);
-    -moz-transform:rotate(-38deg);
-    -ms-transform:rotate(-38deg);
+    -o-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
     -webkit-transform:rotate(-45deg);
-    transform:rotate(-38deg);
+    transform:rotate(-45deg);
     width: 18%;
     box-shadow: 0px 0px 3px 3px #7703d1, 0px 6px 6px 6px #5c00a4;
 }
@@ -123,13 +123,68 @@ body {
     height: 100%;
 	left: 40%;
     top: 0%;
-    -o-transform:rotate(38deg);
-    -moz-transform:rotate(38deg);
-    -ms-transform:rotate(38deg);
+    -o-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
-    transform:rotate(38deg);
+    transform:rotate(45deg);
     width: 20%;
 
 }
 
 
+
+/*##########Animation of our shapes##########*/
+
+
+
+/* opacity 0 (invisible) to opacity 1 (solid) */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade_layer {
+    opacity:0;  
+    -webkit-animation:fadeIn ease-in 1;  
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+ 
+.fade_layer.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+ 
+.fade_layer.two {
+-webkit-animation-delay: 2s;
+-moz-animation-delay:2s;
+animation-delay: 2s;
+}
+ 
+.fade_layer.three {
+-webkit-animation-delay: 4s;
+-moz-animation-delay: 4s;
+animation-delay: 4s;
+}
+
+
+.fade_layer.four {
+-webkit-animation-delay: 7s;
+-moz-animation-delay: 7s;
+animation-delay: 7s;
+}
+
+.fade_layer.five {
+-webkit-animation-delay: 9s;
+-moz-animation-delay: 9s;
+animation-delay: 9s;
+}
