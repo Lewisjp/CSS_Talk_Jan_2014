@@ -13,6 +13,14 @@ body {
 }
 
 
+a:link {
+  color:#666666;
+  text-decoration:none;
+}    
+a:visited {color:#999;} 
+a:hover {color:#999;}  
+a:active {color:#999;} 
+
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -36,9 +44,38 @@ body {
 }
 
 .row {
-	/*width: 100%;
-	max-height: 33%;
-*/
+
+}
+
+.row_learn {
+  position: absolute;
+  right: auto
+  left: auto;
+}
+
+.learn_css {
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+
+.learn_box_o
+{
+  float: left;
+  display: inline-block;
+  position: relative;
+/*  border-style:solid;
+  border-width:medium;*/
+}
+
+.learn_box_x
+{
+  float: right;
+  display: inline-block;
+  position: relative;
+/*  border-style:solid;
+  border-width:medium;*/
 }
 
 /*##########THE BOX##########*/
